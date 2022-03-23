@@ -39,7 +39,7 @@
           </ul>
         </div>
         <div class="footer-logo">
-          <img src="../assets/img/dc-logo-bg.png" alt="" srcset="" />
+          <img src="../../public/assets/img/dc-logo-bg.png" alt="" srcset="" />
         </div>
       </div>
     </div>
@@ -175,7 +175,7 @@ export default {
 
 .footer-back {
   color: white;
-  background-image: url("@/assets/img/footer-bg.jpg");
+  background-image: url("../../public/assets/img/footer-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
