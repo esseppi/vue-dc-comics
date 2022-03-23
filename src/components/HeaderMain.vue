@@ -1,18 +1,20 @@
 <template>
-  <div class="container">
-    <div class="c-logo">
-      <img src="../../public/assets/img/dc-logo.png" alt="" />
+  <header>
+    <div class="container">
+      <div class="c-logo">
+        <img src="../../public/assets/img/dc-logo.png" alt="" />
+      </div>
+      <div class="c-header-link">
+        <ul>
+          <li v-for="link in menuLink" :key="link.name">
+            <a :href="link.link">
+              {{ link.name }}
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="c-header-link">
-      <ul>
-        <li v-for="link in menuLink" :key="link.name">
-          <a :href="link.link">
-            {{ link.name }}
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
+  </header>
 </template>
 
 <script>
@@ -74,9 +76,12 @@ export default {
 $logo-side: 4rem;
 $header-height: 5rem;
 $border-bottom-hover-height: 0.5rem;
+header {
+  background: white;
+  padding-bottom: $border-bottom-hover-height;
+}
 
 .container {
-  margin-bottom: $border-bottom-hover-height;
   height: $header-height;
   display: flex;
   justify-content: space-between;
@@ -93,6 +98,7 @@ $border-bottom-hover-height: 0.5rem;
     height: $header-height;
     width: 70%;
     ul {
+      text-align: right;
       list-style-type: none;
       overflow-x: scroll;
       white-space: nowrap;

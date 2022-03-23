@@ -1,4 +1,6 @@
+@import "./variables";
 .container{
-    width: 85%;
+    width: $container-width;
+    max-width: 1600px;
     margin: auto;
 }

@@ -195,6 +195,7 @@ export default {
       padding-left: 0;
     }
     ul {
+      text-transform: capitalize;
       list-style: none;
       li {
         white-space: nowrap;
@@ -212,7 +213,7 @@ export default {
     height: 100%;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     img {
       align-self: center;
       object-fit: cover;

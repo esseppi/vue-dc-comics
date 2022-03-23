@@ -62,6 +62,7 @@ export default {
   justify-content: space-between;
   padding: 1rem 0;
   button {
+    padding: 0.5rem;
     color: white;
     background-color: transparent;
     border: 3px solid $back-color;
@@ -71,9 +72,10 @@ export default {
     align-items: center;
     justify-content: space-around;
     li {
-      margin-right: 0.2rem;
+      margin-right: 0.4rem;
     }
     div:first-child {
+      margin-right: 1rem;
       color: $back-color;
       font-weight: bolder;
     }
