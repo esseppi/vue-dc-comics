@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-// @import "./assets/scss/allStyle.scss";
+@import "./assets/scss/allStyle.scss";
 * {
   box-sizing: border-box;
   margin: 0;
