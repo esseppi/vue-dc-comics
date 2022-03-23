@@ -1,27 +1,23 @@
 <template>
   <div id="app">
-    <HeaderMain></HeaderMain>
+    <HeaderMain />
+    <CentralMain />
   </div>
 </template>
 
 <script>
 import HeaderMain from "./components/HeaderMain.vue";
+import CentralMain from "./components/CentralMain.vue";
 
 export default {
   name: "App",
   components: {
     HeaderMain,
+    CentralMain,
   },
-  data: () => {},
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+@import "./assets/scss/partials/general";
 </style>

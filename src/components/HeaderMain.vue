@@ -80,7 +80,7 @@ $border-bottom-hover-height: 0.5rem;
   justify-content: space-between;
   align-items: center;
   .c-logo {
-    width: 35%;
+    width: 30%;
     text-align: start;
     img {
       height: $logo-side;
@@ -89,10 +89,10 @@ $border-bottom-hover-height: 0.5rem;
   }
   .c-header-link {
     height: $header-height;
-    width: 65%;
+    width: 70%;
     ul {
       list-style-type: none;
-      overflow-x: hidden;
+      overflow-x: scroll;
       white-space: nowrap;
       padding: 0;
     }
