@@ -164,33 +164,6 @@ export default {
           text: "DC power visa",
         },
       ],
-      socialIcons: [
-        {
-          alt: "Facebook",
-          img: "footer-facebook.png",
-          link: "#",
-        },
-        {
-          alt: "Twitter",
-          img: "footer-twitter.png",
-          link: "#",
-        },
-        {
-          alt: "YouTube",
-          img: "footer-youtube.png",
-          link: "#",
-        },
-        {
-          alt: "Pinterest",
-          img: "footer-pinterest.png",
-          link: "#",
-        },
-        {
-          alt: "Periscope",
-          img: "footer-periscope.png",
-          link: "#",
-        },
-      ],
     };
   },
 };
