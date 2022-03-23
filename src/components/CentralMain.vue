@@ -48,18 +48,23 @@ export default {
   },
 };
 </script>
+
 <style lang="scss" scoped>
+@import "../assets/scss/partials/variables";
+@import "../assets/scss/partials/general";
+
 .banner {
-  background-color: #0282f9;
+  background-color: $back-color;
+  color: white;
+  img {
+    width: 50px;
+    height: 50px;
+  }
 }
-img {
-  width: 50px;
-  height: 50px;
-}
+
 ul {
   padding: 1rem;
   display: flex;
-  margin: 2rem;
   list-style: none;
   justify-content: space-around;
   align-items: center;

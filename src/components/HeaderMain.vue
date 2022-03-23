@@ -69,12 +69,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../assets/scss/partials/variables";
 @import "../assets/scss/partials/general";
 $logo-side: 4rem;
 $header-height: 5rem;
 $border-bottom-hover-height: 0.5rem;
 
 .container {
+  margin-bottom: $border-bottom-hover-height;
   height: $header-height;
   display: flex;
   justify-content: space-between;
@@ -107,10 +109,10 @@ $border-bottom-hover-height: 0.5rem;
       line-height: $header-height;
       border-bottom: $border-bottom-hover-height solid transparent;
       &:hover a {
-        color: blue;
+        color: $back-color;
       }
       &:hover {
-        border-bottom: $border-bottom-hover-height solid blue;
+        border-bottom: $border-bottom-hover-height solid $back-color;
       }
     }
     a,
