@@ -2,7 +2,9 @@
   <div class="back">
     <div class="container">
       <button type="submit">SIGN-UP NOW!</button>
+
       <div class="socialIcons">
+        <div>FOLLOW US</div>
         <ul>
           <li v-for="(icon, index) in socialIcons" :key="index">
             <a :href="icon.link"
@@ -55,7 +57,6 @@ export default {
 .back {
   background-color: #303030;
 }
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -64,6 +65,18 @@ export default {
     color: white;
     background-color: transparent;
     border: 3px solid $back-color;
+  }
+  .socialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    li {
+      margin-right: 0.2rem;
+    }
+    div:first-child {
+      color: $back-color;
+      font-weight: bolder;
+    }
   }
   ul {
     list-style: none;

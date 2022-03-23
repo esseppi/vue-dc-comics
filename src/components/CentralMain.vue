@@ -25,7 +25,7 @@ export default {
         },
         {
           name: "DC MERCHANDISE",
-          img: "buy-comics-digital-comics.png",
+          img: "buy-comics-merchandise.png",
           link: "#",
         },
         {
@@ -57,8 +57,10 @@ export default {
   background-color: $back-color;
   color: white;
   img {
-    width: 50px;
+    object-fit: contain;
+    object-position: center;
     height: 50px;
+    margin-right: 3px;
   }
 }
 
