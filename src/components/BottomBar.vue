@@ -1,12 +1,16 @@
 <template>
-  <div class="container">
-    <button type="submit">SIGN-UP NOW!</button>
-    <div class="socialIcons">
-      <ul>
-        <li v-for="(icon, index) in socialIcons" :key="index">
-          <a :href="icon.link">{{ icon.name }}</a>
-        </li>
-      </ul>
+  <div class="back">
+    <div class="container">
+      <button type="submit">SIGN-UP NOW!</button>
+      <div class="socialIcons">
+        <ul>
+          <li v-for="(icon, index) in socialIcons" :key="index">
+            <a :href="icon.link"
+              ><img :src="'../assets/img/' + icon.img" :alt="icon.name"
+            /></a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -45,3 +49,26 @@ export default {
   },
 };
 </script>
+<style scoped lang="scss">
+@import "../assets/scss/partials/variables";
+@import "../assets/scss/partials/general";
+.back {
+  background-color: #303030;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  button {
+    color: white;
+    background-color: transparent;
+    border: 3px solid $back-color;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+</style>
