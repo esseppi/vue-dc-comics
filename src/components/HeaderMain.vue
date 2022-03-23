@@ -1,13 +1,13 @@
 <template>
   <div class="container">
     <div class="c-logo">
-      <img src="../assets/img/dc-logo.png" alt="">
+      <img src="../assets/img/dc-logo.png" alt="" />
     </div>
     <div class="c-header-link">
       <ul>
         <li v-for="link in menuLink" :key="link.name">
           <a :href="link.link">
-           {{ link.name }}
+            {{ link.name }}
           </a>
         </li>
       </ul>
@@ -17,73 +17,72 @@
 
 <script>
 export default {
-  name: 'HeaderMain',
-  data () {
+  name: "HeaderMain",
+  data() {
     return {
       menuLink: [
         {
-          name: 'CHARACTERS',
-          link: '#',
-        },       
-        {
-          name: 'COMICS',
-          link: '#',
+          name: "CHARACTERS",
+          link: "#",
         },
         {
-          name: 'MOVIES',
-          link: '#',
+          name: "COMICS",
+          link: "#",
         },
         {
-          name: 'TV',
-          link: '#',
+          name: "MOVIES",
+          link: "#",
         },
         {
-          name: 'GAMES',
-          link: '#',
+          name: "TV",
+          link: "#",
         },
         {
-          name: 'COLLECTIBLES',
-          link: '#',
+          name: "GAMES",
+          link: "#",
         },
         {
-          name: 'VIDEOS',
-          link: '#',
+          name: "COLLECTIBLES",
+          link: "#",
         },
         {
-          name: 'FANS',
-          link: '#',
+          name: "VIDEOS",
+          link: "#",
         },
         {
-          name: 'NEWS',
-          link: '#',
+          name: "FANS",
+          link: "#",
         },
         {
-          name: 'SHOP',
-          link: '#',
+          name: "NEWS",
+          link: "#",
         },
-        
-      ]
-    }
-  }
-}
+        {
+          name: "SHOP",
+          link: "#",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-@import '../assets/scss/partials/general';
+@import "../assets/scss/partials/general";
 $logo-side: 4rem;
 $header-height: 5rem;
-$border-bottom-hover-height: 1rem;
+$border-bottom-hover-height: 0.5rem;
 
 .container {
   height: $header-height;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .c-logo{
+  .c-logo {
     width: 35%;
     text-align: start;
-    img{
+    img {
       height: $logo-side;
       width: $logo-side;
     }
@@ -92,41 +91,34 @@ $border-bottom-hover-height: 1rem;
     height: $header-height;
     width: 65%;
     ul {
-     list-style-type: none;
-     overflow-x:hidden;
-     white-space:nowrap;
-     padding: 0;
+      list-style-type: none;
+      overflow-x: hidden;
+      white-space: nowrap;
+      padding: 0;
     }
     li {
+      margin-bottom: -$border-bottom-hover-height;
+      vertical-align: middle;
       display: inline-block;
       position: relative;
       list-style: none;
-      margin: 0 .3rem;
+      margin: 0 0.3rem;
       background-color: white;
-      height: 100%;
-
-    }
-    li:hover a {
-      color: blue;
-    }
-    {
-  content: '';
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  box-shadow: inset 0 -20px 0 #11c0e5;
-}
-    li:hover {
-      border-bottom: $border-bottom-hover-height solid blue;
+      line-height: $header-height;
+      border-bottom: $border-bottom-hover-height solid transparent;
+      &:hover a {
+        color: blue;
+      }
+      &:hover {
+        border-bottom: $border-bottom-hover-height solid blue;
+      }
     }
     a,
     a:visited {
       font-weight: bold;
       color: gray;
       text-decoration: none;
-     }
+    }
   }
 }
 </style>

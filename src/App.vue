@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-  <HeaderMain></HeaderMain>
+    <HeaderMain></HeaderMain>
   </div>
 </template>
 
 <script>
-import HeaderMain from './components/HeaderMain.vue'
+import HeaderMain from "./components/HeaderMain.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HeaderMain,
-
   },
-  data: () => {}
-}
+  data: () => {},
+};
 </script>
 
 <style lang="scss">
@@ -24,6 +23,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
