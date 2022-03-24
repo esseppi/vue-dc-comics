@@ -95,7 +95,7 @@ header {
     }
   }
   .c-header-link {
-    height: $header-height;
+    height: calc($header-height);
     width: 70%;
     ul {
       text-align: right;
@@ -105,7 +105,8 @@ header {
       padding: 0;
     }
     li {
-      margin-bottom: -$border-bottom-hover-height;
+      height: calc(100% - $border-bottom-hover-height);
+      margin-bottom: $border-bottom-hover-height;
       vertical-align: middle;
       display: inline-block;
       position: relative;
